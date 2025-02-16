@@ -6,7 +6,7 @@
     <title>Leena Bency A - GitHub Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -15,56 +15,121 @@
         }
 
         nav {
-            background: #333;
+            background: #34495e;
             color: #fff;
             padding: 1em 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
             margin: 0 15px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffab00;
         }
 
         header {
-            background: #555;
-            color: #fff;
-            padding: 2em 0;
+            background: linear-gradient(rgba(147, 193, 203, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology,code');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            padding: 5em 0;
             text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
         }
 
         section {
             padding: 2em;
             background: #fff;
-            margin: 1em;
+            margin: 1em auto;
+            width: 90%;
+            max-width: 800px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 {
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ffab00;
+            padding-bottom: 0.2em;
+            margin-bottom: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: silver;
+            margin: 0.5em 0;
+            padding: 0.5em;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li strong {
             color: #333;
         }
 
         footer {
             text-align: center;
-            padding: 1em;
-            background: #333;
+            padding: 1.5em;
+            background: #34495e;
             color: #fff;
+            margin-top: 2em;
         }
 
         footer a {
             color: #ffab00;
             text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -76,17 +141,27 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#internships">Internships</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            
         </ul>
     </nav>
-
     <header>
-        <h1>Hello, I'm Leena Bency A</h1>
+        <h1>Hello, I'm Leena Bency </h1>
         <p>Final Year Computer Science and Engineering Student at LICET</p>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a final year student of Loyola-ICAM College of Engineering and Technology. I have a passion for Front-End Development, UI/UX Design, and Cloud Computing. I'm constantly learning and working on exciting projects.</p>
+        <p>I'm a final year student of Loyola-ICAM College of Engineering and Technology. I have a passion for Front-End Development, UI/UX Design. I'm constantly learning and working on exciting projects.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Computer Science and Engineering, LICET (2021 - 2025) - CGPA: 7.9 (6th Semester)</li>
+            <li>HSC - Oxford Matriculation Higher Secondary School (93.4%)</li>
+            <li>SSLC - Oxford Matriculation Higher Secondary School (93%)</li>
+        </ul>
     </section>
 
     <section id="skills">
@@ -100,30 +175,13 @@
         </ul>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor of Computer Science and Engineering, LICET (2021 - 2025) - CGPA: 7.9 (6th Semester)</li>
-            <li>HSC - Oxford Matriculation Higher Secondary School (93.4%)</li>
-            <li>SSLC - Oxford Matriculation Higher Secondary School (93%)</li>
-        </ul>
-    </section>
-
     <section id="internships">
         <h2>Internships</h2>
         <ul>
-            <li><strong>OpenWeaver - Web Development (2023)</strong><br>
-                Created front-end designs using HTML, CSS, and JavaScript.
-            </li>
-            <li><strong>Duhzine IT Solutions - UI/UX Design (2024)</strong><br>
-                Redesigned UI for Urban Company App, designed a Multi-speciality Hospital Application UI, and recreated an institutional application.
-            </li>
-            <li><strong>CodSoft - UI/UX Design (2024)</strong><br>
-                Designed a streamlined signup flow, created responsive email templates, developed an interactive restaurant menu, and designed an e-commerce website.
-            </li>
-            <li><strong>Hanon Systems - Excel VBA Code (2024)</strong><br>
-                Learned and implemented VBA code in Excel for task automation.
-            </li>
+            <li><strong>OpenWeaver - Web Development (2023)</strong><br>Created front-end designs using HTML, CSS, and JavaScript.</li>
+            <li><strong>Duhzine IT Solutions - UI/UX Design (2024)</strong><br>Redesigned UI for Urban Company App, designed a Multi-speciality Hospital Application UI, and recreated an institutional application.</li>
+            <li><strong>CodSoft - UI/UX Design (2024)</strong><br>Designed a streamlined signup flow, created responsive email templates, developed an interactive restaurant menu, and designed an e-commerce website.</li>
+            <li><strong>Hanon Systems - Excel VBA Code (2024)</strong><br>Learned and implemented VBA code in Excel for task automation.</li>
         </ul>
     </section>
 
@@ -172,11 +230,6 @@
         </ul>
     </section>
 
-    <footer>
-        <p>Connect with me on 
-            <a href="https://github.com/Leena9345">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/leena-bency-a-294417280">LinkedIn</a>
-        </p>
-    </footer>
+    
 </body>
 </html>
